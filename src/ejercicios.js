@@ -8,10 +8,10 @@ const ul = document.createElement("ul");
 
 lista.appendChild(ul);
 
-for (let i = 0; i < 50; i++) {
-    const li = document.createElement("li");
-    li.textContent = i;
-    ul.appendChild(li);
-  }
+for (i = 0; i < 50; i++) {
+    const li = `<li class="list-group">${i}</li>`;
+    ul.innerHTML += li;
+    }
+
 
 contenedor.appendChild(lista);
