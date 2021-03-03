@@ -10,17 +10,24 @@ const ul = document.createElement ('ul');
 lista.appendChild(ul);
 
 //Creación del template del elemento <li>
-const template = document.createElement ('li');
+const template = document.getElementById ("myTemplate");
 const nodo = template.cloneNode (true);
 
 //Creación de una serie de 50 elementos 'li'
-for (i = 0; i <= 50; i++) {
+try {
+    for (i = 0; i <= 50; i++) {
     const li = document.createElement ('li');
     li.textContent = i;
     //Inserción de los elementos 'li' al elemento 'ul'
     ul.appendChild(li);
 }
-
+}
+catch (err) {
+    console.log ('Error. list element could not be created');
+}
+finally {
+    console.log ('Finally');
+}
 
 //Inserción del document fragment 'lista' en el 'contenedor'
 contenedor.appendChild(lista);
