@@ -20,12 +20,10 @@ try {
     li.textContent = i;
     //Inserción de los elementos 'li' al elemento 'ul'
     ul.appendChild(li);
-}
-}
-catch (err) {
+    } 
+} catch (err) {
     console.log ('Error. list element could not be created');
-}
-finally {
+} finally {
     console.log ('Finally');
 }
 
