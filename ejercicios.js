@@ -15,7 +15,7 @@ const nodo = template.cloneNode(true);
 
 //Creación de una serie de 50 elementos 'li'
 try {
-    for (i = 0; i <= 50; i++) {
+    for (let i = 0; i <= 50; i++) {
     const li = document.createElement('li');
     li.textContent = i;
     //Inserción de los elementos 'li' al elemento 'ul'
