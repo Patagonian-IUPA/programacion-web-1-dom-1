@@ -22,9 +22,9 @@ try {
     ul.appendChild(li);
     } 
 } catch (err) {
-    console.log ('Error. list element could not be created');
+    console.log('Error. list element could not be created');
 } finally {
-    console.log ('Finally');
+    console.log('Finally');
 }
 
 //Inserción del document fragment 'lista' en el 'contenedor'
