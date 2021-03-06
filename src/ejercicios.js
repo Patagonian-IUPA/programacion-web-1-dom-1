@@ -12,7 +12,7 @@ const template = document.getElementById("template").content;
 
 for (let i = 1; i <= 50; i++) {
   template.getElementById("list-item").innerText = i;
-  lista.appendChild(template.cloneNode(true));
+  unorderedList.appendChild(template.cloneNode(true));
 }
 
 contenedor.appendChild(lista);
